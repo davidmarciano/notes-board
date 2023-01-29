@@ -39,7 +39,6 @@ interface Props {
 }
 
 const Content = ({ author, onAuthorChange, message, onMessageChange, isExisting } : Props) => {
-  console.log('Modal Content render!');
   return (
     <Wrapper>
       {!isExisting && (

@@ -34,7 +34,6 @@ interface Props {
 }
 
 const ActionButtons = ({ onPostClick, onCancelClick }: Props) => {
-  console.log('Modal ActionButtons render!');
   return (
     <Wrapper>
       <Button onClick={onCancelClick}>Cancel</Button>

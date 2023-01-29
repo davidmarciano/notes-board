@@ -50,7 +50,6 @@ interface Props {
 }
 
 const Modal = ({ isOpen, data, onPost, onClose }: Props) => {
-  console.log('Modal render!');
   const { 
     author, onAuthorChange,
     message, onMessageChange,

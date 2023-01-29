@@ -32,7 +32,6 @@ interface Props {
 }
 
 const NotesBoard = ({ notes, onAddClick, onNoteClick, onDeleteClick }: Props) => {
-  console.log('NotesBoard render!');
   return (
     <Wrapper>
       <AddButton onClick={onAddClick} />

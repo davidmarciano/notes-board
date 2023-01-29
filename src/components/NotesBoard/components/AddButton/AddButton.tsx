@@ -28,7 +28,6 @@ interface Props {
 };
 
 const AddButton = ({onClick} : Props) => {
-  console.log('AddButton render!');
   return (
     <Wrapper onClick={onClick}>
       <Title>Add new note</Title>
