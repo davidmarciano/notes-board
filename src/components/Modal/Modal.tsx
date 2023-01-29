@@ -56,7 +56,7 @@ const Modal = ({ isOpen, data, onPost, onClose }: Props) => {
     onPostClick, onCancelClick
   } = useForm({ data, onPost, onClose });
 
-  const title = useMemo(() => !!data ? `Note from ${data?.author}` : 'Post a new note', [data]);
+  const title = !!data ? `Note from ${data?.author}` : 'Post a new note';
 
   return (
     <Wrapper open={isOpen}>
