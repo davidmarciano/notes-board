@@ -50,7 +50,6 @@ interface Props extends NoteType {
 }
 
 const Note = ({ id, author, message, date, onNoteClick, onDeleteClick }: Props) => {
-  console.log(`Note ${author} render!`);
   const stringifyDate = useMemo(
     () => moment(date).format('dddd, MMMM Do YYYY, h:mm:ss a'),
     [date]
